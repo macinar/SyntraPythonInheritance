@@ -7,13 +7,17 @@ class Animal:
         return f"{self.name} makes a sound"
 
 # Child Class
-class Dog:
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+
     def speak(self):
-        return f"{self.name} barks"
+        return f"{self.breed} {self.name} barks"
 
 # Main
 def main():
-    dog = Dog("Buddy")
+    dog = Dog("Buddy", "Pitbull")
 
     # Buddy barks
     print(dog.speak())

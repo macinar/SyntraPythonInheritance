@@ -3,7 +3,7 @@ class Animal:
     ...
 
 # Child Class
-class Dog:
+class Dog(Animal):
     ...
 
 # Main
