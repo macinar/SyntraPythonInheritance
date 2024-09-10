@@ -10,10 +10,6 @@ class Animal:
 class Dog:
     ...
 
-# Child Class
-class Cat:
-    ...
-
 # Main
 def main():
     # Let Buddy Bark
