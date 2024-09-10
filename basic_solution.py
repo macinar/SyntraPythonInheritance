@@ -7,7 +7,7 @@ class Animal:
         return f"{self.name} makes a sound"
 
 # Child Class
-class Dog(Animal):
+class Dog:
     def speak(self):
         return f"{self.name} barks"
 
@@ -15,6 +15,7 @@ class Dog(Animal):
 def main():
     dog = Dog("Buddy")
 
-    print(dog.speak())  # Buddy barks
+    # Buddy barks
+    print(dog.speak())
 
 main()
